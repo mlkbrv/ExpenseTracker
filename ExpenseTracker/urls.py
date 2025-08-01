@@ -20,5 +20,6 @@ from myapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",index,name="index"),
-    path("edit/<int:id>",edit,name="edit"),
+    path("edit/<int:id>/",edit,name="edit"),
+    path("delete/<int:id>/",delete,name="delete"),
 ]
